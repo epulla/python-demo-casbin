@@ -122,6 +122,8 @@ def create_user():
     return f"<h3>You are allowed to make this requests: create_user()</h3>"
 ```
 
+## URL tests
+
 You can try these urls to test the authorization process using Casbin (you need to run the flask app first):
 
 - [Erick (admin) trying to create user](http://localhost:5000/create/user?userid=1)
