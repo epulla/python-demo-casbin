@@ -19,7 +19,7 @@ def authorizator(obj: str, act: str):
                 if e.enforce(sub, obj, act): # check if that user is authorized
                     response =  func()
                 else:
-                    response = f'<p>We\'re sorry {user[1]}, but as an {sub}, you don\'t have the authorization for {act} {obj}</p>'
+                    response = f'<h3>We\'re sorry {user[1]}, but as an {sub}, you don\'t have the authorization for {act} {obj}</h3>'
 
                 return f"{response}<br><br><p>Request by: {user[1]} ({user[2]})</p>"
             except Exception:
