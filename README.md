@@ -49,6 +49,8 @@ Run the flask app:
 flask run
 ```
 
+Go to [URL test](https://github.com/epulla/python-demo-casbin#url-tests) section to test some urls after running flask.
+
 # How it works
 
 ## Casbin model configuration file
