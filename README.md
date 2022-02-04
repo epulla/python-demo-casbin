@@ -6,7 +6,7 @@ Casbin is a open-source access control library. It provides support for enforcin
 - [Installation](https://github.com/epulla/python-demo-casbin#installation)
 - [How it works](https://github.com/epulla/python-demo-casbin#how-it-works)
 - [Url examples for testing the app](https://github.com/epulla/python-demo-casbin#url-tests)
-- Pros & Cons of Casbin/Casdoor
+- [Pros & Cons of Casbin/Casdoor](https://github.com/epulla/python-demo-casbin/blob/main/README.md#pros--cons-of-casbincasdoor)
 
 # Installation
 
