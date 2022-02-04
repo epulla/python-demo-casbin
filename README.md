@@ -1,6 +1,13 @@
 # Python demo with Casbin library
 Casbin is a open-source access control library. It provides support for enforcing authorization based on various access control models.
 
+# Content
+
+- [Installation](https://github.com/epulla/python-demo-casbin#installation)
+- [How it works](https://github.com/epulla/python-demo-casbin#how-it-works)
+- [Url examples for testing the app](https://github.com/epulla/python-demo-casbin#url-tests)
+- Pros & Cons of Casbin/Casdoor
+
 # Installation
 
 ## Requirements
@@ -134,3 +141,25 @@ You can try these urls to test the authorization process using Casbin (you need 
 - [Luis (user) trying to get users](http://localhost:5000/users?userid=3)
 
 You can see more about PyCasbin documentation [here](https://github.com/casbin/pycasbin).
+
+# Pros & Cons of Casbin/Casdoor
+
+## Pros:
+
+- Casdoor is developed in Go, but there are SDKs for other languages (python, JS).
+- Casbin supports many sql database engines (mysql, postgres) (it supports only relational databases).
+- Casbin is really useful for 
+- A docker image for casbin/casdoor exists and can be configured.
+- Casdoor's SDK will allow you to easily connect your application to the Casdoor authentication system without having to implement it from scratch.
+
+## Cons:
+
+- There aren’t many useful tutorials for Casdoor developments.
+- A new database structure could be required for Casdoor implementation (new tables).
+- Casbin does not do authentication.
+- Casdoor is a third-party User-Role Management platform, so more resources may be required to implement it.
+- There are no documentation for third party authentication providers such as Google for Casdoor
+- Official demos are not working as expected with third party authentication such as Google and Facebook.
+- ince Casdoor is a UI-based OAuth provider, you cannot use a request management service like Postman to send a URL with parameters and get back a JSON file.
+- Most of its documentation is outdated.
+
